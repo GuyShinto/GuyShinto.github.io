@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+}
