@@ -1,7 +1,14 @@
 * {
+    --tw-text-opacity: 1;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(90 90 90);
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
 }
 
 nav {
@@ -11,6 +18,139 @@ nav {
     padding: 10px;
 }
 
-.menu {
+
+
+/* sub */
+
+h1 {
+    color: white;
+}
+
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+.relative {
+    position: relative;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-grow, .grow {
+    flex-grow: 1;
+}
+
+.flex {
     display: flex;
 }
+
+.justify-stretch {
+    justify-content: stretch;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.mt-24 {
+    margin-top: 6rem;
+}
+.mb-8 {
+    margin-bottom: 2rem;
+}
+.my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.c-header-font-bg_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.c-header-font-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    /*transform: translateY(12.5rem);*/
+}
+
+.min-h-\[calc\(100vh-4rem\)\] {
+    min-height: calc(100vh - 4rem);
+}
+
+.h-full {
+    height: 100%;
+}
+
+:is(.dark *) {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-center {
+    text-align: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+@media (min-width: 744px) {
+    .container {
+        max-width: 744px;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .container {
+        max-width: 480px;
+    }
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+@media (min-width: 744px) {
+    .loco-text-heading-xl {
+        font-size: 4.375rem;
+    }
+}
+
+.loco-text-heading-xl {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+
+/****************************/
+
+
+
