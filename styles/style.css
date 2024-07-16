@@ -42,7 +42,17 @@ abbr:where([title]) {
 
 h1,h2,h3,h4,h5,h6 {
     font-size: inherit;
-    font-weight: inherit
+    font-weight: inherit;
+    color: white;
+}
+
+main {
+    position: relative;
+    flex: 1 1 0%;
+}
+
+section {
+    position: relative;
 }
 
 nav {
@@ -54,12 +64,60 @@ nav {
 
 
 
-/* sub */
+/* class */
 
 
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.1;
+}
 
-h1 {
-    color: white;
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    position: sticky;
+    width: 100%;
+    z-index: 50;
+    height: 2.75rem;
+    align-items: center;
+    top: 0;
+}
+
+.c-navbar {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.l-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.i-navbar {
+    line-height: 1.125rem;
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: .75rem;
+    font-weight: 400;
+    letter-spacing: .0075rem;
 }
 
 .section-bg {
@@ -104,10 +162,6 @@ h1 {
 
 .top-0 {
     top: 0;
-}
-
-.sticky {
-    position: sticky;
 }
 
 .w-full {
@@ -186,9 +240,6 @@ h1 {
     height: 100vh;
 }
 
-.tracking-\[0\.0075rem\] {
-    letter-spacing: .0075rem;
-}
 .leading-2 {
     line-height: 1.125rem;
 }
