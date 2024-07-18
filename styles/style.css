@@ -84,6 +84,18 @@ nav {
     height: 100%;
     background-size: cover;
     background-position: center;
+    animation-name: background-motion;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+}
+
+@keyframes background-motion {
+    0%   {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .screen {
@@ -113,12 +125,39 @@ nav {
 }
 
 .i-navbar {
+    display: flex;
+    position: relative;
     text-decoration: none;
     line-height: 1.125rem;
-    padding: 2rem 2rem 2rem 2rem;
+    margin-left: .25rem;
+    margin-right: .25rem;
     font-size: .75rem;
     font-weight: 400;
     letter-spacing: .0075rem;
+    opacity: .6;
+    transition: .3s;
+}
+
+.i-navbar:hover {
+    opacity: 1
+}
+
+.i-navbar:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+.i-navbar:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .slid-title {
@@ -143,9 +182,9 @@ nav {
     flex-direction: column;
     justify-content: stretch;
     height: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
 }
 
 .slid-in-title {
@@ -159,7 +198,24 @@ nav {
     font-size: 5.25rem;
     font-weight: 500;
     line-height: 1em;
-    margin: 1rem 1rem 1rem 1rem;
+    letter-spacing: 1px;
+    transform: translateX(0);
+    animation-name: title-motion;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
+@keyframes title-motion {
+    0%   {
+        opacity: 0;
+        transform: translateX(5rem);
+        letter-spacing: 10px
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        letter-spacing: 1px
+    }
 }
 
 .slid-1 {
