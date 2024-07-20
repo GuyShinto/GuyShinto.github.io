@@ -1,4 +1,4 @@
-var text = document.getElementById('title-motion');
+var text = document.querySelector(".slid-text-title");
 var newDom = '';
 var animationDelay = 6;
 
@@ -14,3 +14,17 @@ for(let i = 0; i < length; i++)
 {
     text.children[i].style['animation-delay'] = animationDelay * i * 15 + 'ms';
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                return;
+            }
+            entry.target.classList.remove('in-view');
+        });
+    });
+    const allAnimate = document.querySelectorAll(".animate");
+    allAnimate.forEach((element) => observer.observe(element))
+})
