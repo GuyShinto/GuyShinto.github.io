@@ -287,9 +287,14 @@ nav {
     align-content: center;
     justify-content: center;
     margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: -2rem;
 }
 
+.slid-img-block-1 {
+    display: flex;
+    overflow: hidden;
+    border-radius: .75rem;
+}
 
 .slid-2 {
     display: flex;

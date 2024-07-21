@@ -28,3 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const allAnimate = document.querySelectorAll(".animate");
     allAnimate.forEach((element) => observer.observe(element))
 })
+
+document.addEventListener("scroll", () => {
+    const elements = document.querySelectorAll(".slid-scroll-img");
+    elements.forEach((element) => {
+        var scrollbetween = (window.scrollY - element.scrollHeight)/5;
+        element.style['transform'] = `translateY(${scrollbetween}px)`
+    });
+})
