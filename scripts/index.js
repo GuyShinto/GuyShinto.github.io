@@ -32,7 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("scroll", () => {
     const elements = document.querySelectorAll(".slid-scroll-img");
     elements.forEach((element) => {
-        var scrollbetween = (window.scrollY - element.scrollHeight)/5;
+        var scrollbetween = (window.scrollY - element.scrollHeight)/9;
+        element.style['transform'] = `translateY(${scrollbetween}px)`
+    });
+
+    const elementsmask = document.querySelectorAll(".slid-scroll-img-mask");
+    elementsmask.forEach((element) => {
+        var scrollbetween = (window.scrollY - element.scrollHeight)/10;
         element.style['transform'] = `translateY(${scrollbetween}px)`
     });
 })

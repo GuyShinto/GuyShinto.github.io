@@ -2,7 +2,7 @@
     --tw-text-opacity: 1;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 :root {
@@ -13,6 +13,12 @@
 div {
     display: block;
     unicode-bidi: isolate;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: .5rem;
 }
 
 html {
@@ -278,9 +284,9 @@ nav {
     justify-content: end;
     text-align: end;
     flex-wrap: wrap;
-    width: 300px;
-    margin: 2rem 0 3rem 0;
-    padding: 1rem 0 15rem 0;
+    width: 2rem;
+    margin: 3rem 0 3rem 5rem;
+    padding: 1rem 0 5rem 10rem;
 }
 
 .slid-text-1 {
@@ -293,14 +299,15 @@ nav {
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin-left: 2rem;
-    margin-right: -2rem;
+    margin-left: 1rem;
+    margin-right: 5rem;
 }
 
 .slid-img-block-1 {
     display: flex;
     overflow: hidden;
-    border-radius: .75rem;
+    border-radius: .5rem;
+    
 }
 
 .slid-2 {
@@ -381,11 +388,11 @@ nav {
 
 @media (min-width: 480px) {
     .\!container {
-        max-width:480px!important
+        max-width:780px!important
     }
 
     .container {
-        max-width: 480px
+        max-width: 780px
     }
 }
 
