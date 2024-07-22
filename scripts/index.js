@@ -15,6 +15,7 @@ for(let i = 0; i < length; i++)
     text.children[i].style['animation-delay'] = animationDelay * i * 15 + 'ms';
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -32,13 +33,16 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("scroll", () => {
     const elements = document.querySelectorAll(".slid-scroll-img");
     elements.forEach((element) => {
-        var scrollbetween = (window.scrollY - element.scrollHeight)/9;
+        var speed = element.getAttribute("speed");
+        if (!speed) {speed = 1};
+        var scrollbetween = (window.scrollY - element.scrollHeight)/(9 / parseFloat(speed));
         element.style['transform'] = `translateY(${scrollbetween}px)`
     });
-
     const elementsmask = document.querySelectorAll(".slid-scroll-img-mask");
     elementsmask.forEach((element) => {
-        var scrollbetween = (window.scrollY - element.scrollHeight)/10;
+        var speed = element.getAttribute("speed");
+        if (!speed) {speed = 1};
+        var scrollbetween = (window.scrollY - element.scrollHeight)/(10 / parseFloat(speed));
         element.style['transform'] = `translateY(${scrollbetween}px)`
     });
 })
