@@ -27,22 +27,30 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
     const allAnimate = document.querySelectorAll(".animate");
-    allAnimate.forEach((element) => observer.observe(element))
+    allAnimate.forEach((element) => {
+        if (element.hasAttribute("percentage")) {
+            var percentage = element.getAttribute("percentage");
+            if (!percentage) {percentage = '0%'};
+            element.style.setProperty('--percentage-height',percentage + '%');
+        }
+        observer.observe(element)
+    });
 })
+
 
 document.addEventListener("scroll", () => {
     const elements = document.querySelectorAll(".slid-scroll-img");
     elements.forEach((element) => {
         var speed = element.getAttribute("speed");
         if (!speed) {speed = 1};
-        var scrollbetween = (window.scrollY - element.scrollHeight)/(9 / parseFloat(speed));
+        var scrollbetween = (window.scrollY - element.scrollHeight)/((window.innerHeight/100) / parseFloat(speed));
         element.style['transform'] = `translateY(${scrollbetween}px)`
     });
     const elementsmask = document.querySelectorAll(".slid-scroll-img-mask");
     elementsmask.forEach((element) => {
         var speed = element.getAttribute("speed");
         if (!speed) {speed = 1};
-        var scrollbetween = (window.scrollY - element.scrollHeight)/(10 / parseFloat(speed));
+        var scrollbetween = (window.scrollY - element.scrollHeight)/((window.innerHeight/90) / parseFloat(speed));
         element.style['transform'] = `translateY(${scrollbetween}px)`
     });
 })
