@@ -65,13 +65,15 @@ function comparator(a, b) {
     return 0; 
 }
 
-function SortData(indexes) { 
+function SortData(indexes,selector) { 
     var indexesArray = Array.from(indexes); 
     let sorted = indexesArray.sort(comparator); 
     sorted.forEach(e => 
-        document.querySelector("#list").appendChild(e)); 
+        document.querySelector(selector).appendChild(e)); 
 }
 Delay()
 View()
 Scoll()
-SortData(document.querySelectorAll(".slid-3-bars .index"))
+
+SortData(document.querySelectorAll(".slid-3-bars .index-1"),"#list-1")
+SortData(document.querySelectorAll(".slid-3-bars .index-2"),"#list-2")
