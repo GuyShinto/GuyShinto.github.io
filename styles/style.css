@@ -598,13 +598,13 @@ nav {
     margin-left: 25px;
     text-align: center;
     transition: 0.25s;
-    transition: height 1s ease-in;
+    transition: height 1s ease-in,background-color 0.25s ease-in;
     transition-property: background-color;
 }
 
 .slid-3-bars .bar.in-view{
     height: var(--percentage-height);
-    transition: height 1s ease-out;
+    transition: height 1s ease-out,background-color 0.25s ease-out;
 }
 
 .slid-3-bars .bar:hover{
