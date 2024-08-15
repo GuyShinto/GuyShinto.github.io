@@ -640,7 +640,108 @@ nav {
     max-width: 600px;
 }
 
+.slid-4-info {
+    background-color: rebeccapurple;
+    width: 30%;
+    height: 100%;
+}
 
+.slid-4-frame {
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slid-4-title {
+    text-align: center;
+    font-size: 54px;
+    font-weight: 600;
+}
+
+.slid-4-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bfff00;
+    width: 100%;
+    height: 70%;
+}
+
+.slid-4-card-max {
+    display: flex;
+    background-color: #ff7b00;
+    width: 450px;
+    height: 600px;
+    perspective: 1000px;
+}
+
+.slid-4-card-max.flip .slid-4-card{
+    transform: rotateY(180deg) !important;
+}
+
+.slid-4-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.slid-4-card-front, .slid-4-card-back{
+    display: flex;
+    border-radius: 0.5rem;
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slid-4-card-front img, .slid-4-card-back img{
+    width: 100%;
+    height: 100%;
+}
+
+.slid-4-card-front {
+    background-color: #ff0000;
+}
+.slid-4-card-back {
+    background-color: #2f00ff;
+    transform: rotateY(180deg);
+}
+
+.slid-4-filp-container {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #028f00;
+    width: 100%;
+    height: 10%;
+}
+.slid-4-filp {
+    text-align: center;
+    border-radius: 0.5rem;
+    border-style: none;
+    transition: 0.1s;
+    background-color: #0077ff;
+    font-size: 40px;
+    font-weight: 200;
+    width: 200px;
+    height: 60px;
+}
+
+.slid-4-filp:hover {
+    background-color: #0050ab;
+    transform: scale(1.1);
+}
+
+.slid-4-filp:active {
+    transform: scale(1);
+}
 
 
 
