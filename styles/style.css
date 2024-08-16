@@ -429,6 +429,8 @@ nav {
     
 }
 
+
+
 .social-linebar {
     display: flex;
     background-color: #f20000;
@@ -480,6 +482,12 @@ nav {
     left: 30px;
     display: flex;
     transform: scale(2);
+    transition: transform 0.25s ease-out;
+    cursor: pointer;
+}
+
+.social-img-size:hover {
+    transform: scale(2.2);
 }
 
 .social-img-block {
@@ -743,9 +751,116 @@ nav {
     transform: scale(1);
 }
 
+.slid-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: aqua;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    height: 900px;
+    min-width: 600px;
+    max-width: 600px;
+}
 
+.slid-5-frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
 
+.slid-5-frame-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+}
 
+.slid-5-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    background-color: rgb(255, 143, 143);
+    width: 100%;
+    height: 20%;
+}
+
+.slid-5-top {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    background-color: #bfff00;
+    width: 100%;
+    height: 70%;
+}
+
+.slid-5-mid {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: #bfff00;
+    width: 100%;
+    height: 70%;
+}
+
+.slid-5-down {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    background-color: #bfff00;
+    width: 100%;
+    height: 70%;
+}
+
+.slid-5-icon {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    width: 100px;
+    height: 100px;
+}
+
+.slid-5-icon.in-view {
+    animation: in-view-slid-5-icon 1s ease 1 both;
+}
+
+@keyframes in-view-slid-5-icon{
+    from{
+        left: 40px;
+    }
+    to{
+        left: 20px;
+    }
+}
+
+.slid-5-line {
+    position: relative;
+    top: 30px;
+    left: 20px;
+    background-color: #ffffff;
+    width: calc(100% - 40px);
+    height: 2.5px;
+}
+
+.slid-5-line.in-view {
+    animation: in-view-slid-5-line 1s ease 1 both;
+}
+
+@keyframes in-view-slid-5-line{
+    from{
+        opacity: 0;
+        width: 0px;
+    }
+    to{
+        opacity: 1;
+        width: calc(100% - 40px);
+    }
+}
 
 
 

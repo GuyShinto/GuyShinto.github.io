@@ -33,7 +33,7 @@ function View() {
         });
     })
 }
-
+/*
 var flipPaper = document.getElementsByClassName('slid-4-card-max')[0];
 
 document.getElementsByClassName('slid-4-filp')[0].onclick = function() {
@@ -44,7 +44,7 @@ document.getElementsByClassName('slid-4-filp')[0].onclick = function() {
     {
         flipPaper.classList.remove('flip');
     }
-}
+}*/
 
 
 function Scoll() {
