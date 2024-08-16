@@ -962,6 +962,80 @@ nav {
     height: 100%;
     width: 800px;
 }
+.slid-6-5 {
+    display: grid;
+    align-self: center;
+    gap: 10px;
+    grid-template-areas:
+    'header right right right'
+    'header right right right';
+    background-color: rgb(72, 0, 255);
+    height: 100%;
+    width: 900px;
+}
+
+.slid-6-6 {
+    display: grid;
+    align-self: center;
+    gap: 10px;
+    grid-template-areas:
+    'left left left header'
+    'left left left header';
+    background-color: rgb(72, 0, 255);
+    height: 100%;
+    width: 900px;
+}
+
+.slid-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: aqua;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    height: 1000px;
+    width: 500px;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.slid-7-title {
+    text-align: center;
+    align-self: center;
+    font-size: 40px;
+    font-weight: 200;
+    background-color: rgb(255, 143, 143);
+    width: 800px;
+    height: 20%;
+}
+.slid-7-info {
+    text-align: center;
+    align-self: center;
+    background-color: rgb(255, 70, 70);
+    width: 800px;
+    height: 100%;
+}
+
+.slid-7-list {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 250px;
+    background-color: rgb(72, 0, 255);
+    height: 100%;
+    width: 900px;
+}
+
+.item-card {
+    display: flex;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    background-color: rgb(35, 0, 125);
+    height: 220px;
+    width: 400px;
+}
 
 .grid-card {
     background-color: #00ff08;
