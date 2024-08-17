@@ -968,7 +968,15 @@ nav {
     gap: 10px;
     grid-template-areas:
     'header right right right'
-    'header right right right';
+    'header right right right'
+    'header right right right'
+    'header right right right'
+    'header right right right'
+    'header right right right'
+    'header right right right'
+    'header right right right'
+    'header right right right'
+    'header down down down';
     background-color: rgb(72, 0, 255);
     height: 100%;
     width: 900px;
@@ -980,7 +988,15 @@ nav {
     gap: 10px;
     grid-template-areas:
     'left left left header'
-    'left left left header';
+    'left left left header'
+    'left left left header'
+    'left left left header'
+    'left left left header'
+    'left left left header'
+    'left left left header'
+    'left left left header'
+    'left left left header'
+    'down down down header';
     background-color: rgb(72, 0, 255);
     height: 100%;
     width: 900px;
@@ -1026,6 +1042,45 @@ nav {
     background-color: rgb(72, 0, 255);
     height: 100%;
     width: 900px;
+}
+.image-slot {
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #a2ff00;
+    height: 100%;
+    width: 100%;
+}
+
+.image-slot .slot{
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 30px;
+    border-style: none;
+    transition: 0.1s ease-in-out;
+    height: 15px;
+    width: 15px;
+}
+
+.image-slot .past,.image-slot .next{
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    border-radius: 30px;
+    border-style: none;
+    transition: 0.5s;
+    height: 30px;
+    width: 30px;
+}
+
+.image-slot .past:hover,.image-slot .next:hover,.image-slot .slot:hover{
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 .item-card {
