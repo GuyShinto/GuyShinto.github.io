@@ -84,6 +84,19 @@ function SortData(indexes,selector) {
         document.querySelector(selector).appendChild(e)); 
 }
 
+function showImage(n,id) {
+    let index = document.querySelectorAll(".image-show-flex");
+    index.forEach((element) => {
+        if(element.id == id){
+            let l = element.querySelectorAll(".image-show");
+            for (let i = 0; i < l.length; i++) {
+                l[i].className = l[i].className.replace(" active", "");
+            };
+            l[n].className += " active";
+        }
+    })
+}
+
 function plusSlides(n,id) {
     let slides = document.querySelectorAll(".image-slot");
     slides.forEach((element) => {
@@ -122,6 +135,7 @@ function showSlides(n,element) {
     for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     };
+    showImage(current-1,element.id)
     dots[current-1].className += " active";
     /*
     if (n > slides.length) {slideIndex = 1}
