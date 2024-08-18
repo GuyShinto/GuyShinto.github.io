@@ -46,6 +46,24 @@ document.getElementsByClassName('slid-4-filp')[0].onclick = function() {
     }
 }*/
 
+function ShowModal() {
+    var modal = document.getElementById("myModal");
+    var img = document.querySelectorAll(".image-show img");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.forEach((element) => {
+        element.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    })
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    
+}
 
 function Scoll() {
     document.addEventListener("scroll", () => {
@@ -157,5 +175,6 @@ function showSlides(n,element) {
 Delay()
 View()
 Scoll()
+ShowModal()
 SortData(document.querySelectorAll(".slid-3-bars .index-1"),"#list-1")
 SortData(document.querySelectorAll(".slid-3-bars .index-2"),"#list-2")
