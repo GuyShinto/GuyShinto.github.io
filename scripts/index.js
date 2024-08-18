@@ -83,9 +83,65 @@ function SortData(indexes,selector) {
     sorted.forEach(e => 
         document.querySelector(selector).appendChild(e)); 
 }
+
+function plusSlides(n,id) {
+    let slides = document.querySelectorAll(".image-slot");
+    slides.forEach((element) => {
+        let current = parseInt(element.getAttribute("current"))
+        if (element.id == id)
+        {
+            element.setAttribute("current",current+n);
+            showSlides(current+n,element);
+        }
+    })
+  }
+
+function currentSlide(n,id) {
+    let slides = document.querySelectorAll(".image-slot");
+    slides.forEach((element) => {
+        let current = parseInt(element.getAttribute("current"))
+        if (element.id == id)
+        {
+            element.setAttribute("current",n);
+            showSlides(current,element);
+        }
+    })
+  }
+
+function showSlides(n,element) {
+    let current = parseInt(element.getAttribute("current"));
+    let dots = element.querySelectorAll(".dot");
+    if (n > dots.length) {
+        current = 1
+        element.setAttribute("current",1)
+    };
+    if (n < 1) {
+        current = dots.length
+        element.setAttribute("current",dots.length)
+    };
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    };
+    dots[current-1].className += " active";
+    /*
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "flex";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "flex";
+    dots[slideIndex-1].className += " active";
+    */
+  }
+
+
+
+
 Delay()
 View()
 Scoll()
-
 SortData(document.querySelectorAll(".slid-3-bars .index-1"),"#list-1")
 SortData(document.querySelectorAll(".slid-3-bars .index-2"),"#list-2")
