@@ -10,6 +10,11 @@
     --text-color: #ffffff;
   }
 
+@font-face {
+    font-family: Kanit;
+    src: url(../fonts/Kanit-Light.ttf);
+} 
+
 div {
     display: block;
     unicode-bidi: isolate;
@@ -28,9 +33,7 @@ html {
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;
-    /*
-    font-family: var(--font-inter),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    */
+    font-family: Kanit;
     font-feature-settings: normal;
     font-variation-settings: normal
 }
