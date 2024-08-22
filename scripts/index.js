@@ -65,8 +65,19 @@ function ShowModal() {
     
 }
 
+function clamp(number, min, max) {
+    return Math.max(min, Math.min(number, max));
+};
+
 function Scoll() {
     document.addEventListener("scroll", () => {
+
+        const background = document.querySelectorAll(".fade-background");
+        background.forEach((element) => {
+            element.style['opacity'] = clamp(1.0 - window.scrollY/700,0.25,1.0);
+            element.style['filter'] = `blur(${clamp(window.scrollY/100,0.0,10.0)}px)`;
+        });
+
         const elements = document.querySelectorAll(".slid-scroll-img");
         elements.forEach((element) => {
             var speed = parseFloat(element.getAttribute("speed")) || 1.0;
