@@ -565,13 +565,15 @@ nav {
 
 .dev-item{
     display: flex;
+    margin-left: 20px;
     margin-top: 20px;
     flex-wrap: wrap;
     font-size: 20px;
     height: 100px;
-    width: 100%;
+    width: 80%;
     display: flex;
     gap: 20px;
+    column-count: 3;
     row-gap: 80px;
     flex-wrap: wrap;
     background-color: #003067;
@@ -716,10 +718,14 @@ nav {
 }
 
 .active-title-big {
-    margin-left: 30px;
-    margin-right: 30px;
     line-height: 0.8;
     font-size: 120px;
+    text-align: center;
+}
+
+.title-space {
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .active-desc {
@@ -1233,7 +1239,7 @@ nav {
     'left right header';
     background-color: rgb(72, 0, 255);
     height: 100%;
-    width: 800px;
+    width: 1000px;
 }
 
 .slid-6-3 {
