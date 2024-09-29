@@ -823,6 +823,32 @@ nav {
     }
 }
 
+.line-center {
+    position: relative;
+    top: 50px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 2px;
+    transform-origin: 50% 50%;
+    background-color: #ffffff;
+}
+
+.line-center.in-view {
+    animation: in-view-line-center 2s ease 1 both;
+}
+
+@keyframes in-view-line-center{
+    from{
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    to{
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
 .line-between {
     margin-top: 0.5rem;
     margin-bottom: 2rem;
@@ -1198,6 +1224,28 @@ nav {
     width: 800px;
     min-width: 800px;
     max-width: 800px;
+}
+
+.out-space {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: aqua;
+    margin-top: 10rem;
+    height: 100px;
+    width: 800px;
+    min-width: 800px;
+    max-width: 800px;
+}
+
+.out-space-title {
+    text-align: center;
+    align-self: center;
+    font-size: 60px;
+    font-weight: 200;
+    background-color: rgb(255, 143, 143);
+    width: 800px;
+    height: 30px;
 }
 
 .slid-6-title {
