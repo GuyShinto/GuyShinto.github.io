@@ -711,6 +711,7 @@ nav {
 }
 
 .active-full-img .icon{
+    cursor: pointer;
     display: block;
     height: 100%;
     width: 100%;
@@ -1252,7 +1253,7 @@ nav {
     'header down right';
     background-color: rgb(72, 0, 255);
     height: 100%;
-    width: 800px;
+    width: 1000px;
 }
 
 .slid-6-4 {
@@ -1260,12 +1261,12 @@ nav {
     align-self: center;
     gap: 10px;
     grid-template-areas:
-    'top top top'
-    'top top top'
+    'top top down'
+    'top top down'
     'left right header';
     background-color: rgb(72, 0, 255);
     height: 100%;
-    width: 800px;
+    width: 1000px;
 }
 .slid-6-5 {
     display: grid;
@@ -1284,7 +1285,7 @@ nav {
     'header down down down';
     background-color: rgb(72, 0, 255);
     height: 100%;
-    width: 900px;
+    width: 1000px;
 }
 
 .slid-6-6 {
@@ -1304,7 +1305,7 @@ nav {
     'down down down header';
     background-color: rgb(72, 0, 255);
     height: 100%;
-    width: 900px;
+    width: 1000px;
 }
 
 .slid-7 {

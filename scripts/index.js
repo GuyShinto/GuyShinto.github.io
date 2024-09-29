@@ -48,7 +48,7 @@ document.getElementsByClassName('slid-4-filp')[0].onclick = function() {
 
 function ShowModal() {
     var modal = document.getElementById("myModal");
-    var img = document.querySelectorAll(".image-show img,.item-card-icon img");
+    var img = document.querySelectorAll(".image-show img,.item-card-icon img,.icon img");
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
     img.forEach((element) => {
