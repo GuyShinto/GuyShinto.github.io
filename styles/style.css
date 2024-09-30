@@ -1370,6 +1370,34 @@ nav {
     width: 1000px;
 }
 
+.slid-6-8 {
+    display: grid;
+    align-self: center;
+    gap: 10px;
+    grid-template-areas:
+    'top top header'
+    'down down header'
+    'left right header';
+    background-color: rgb(72, 0, 255);
+    height: 100%;
+    width: 1000px;
+}
+
+.slid-6-9 {
+    display: grid;
+    align-self: center;
+    gap: 10px;
+    grid-template-areas:
+    'right right header'
+    'top top top'
+    'down down down'
+    'left left left'
+    ;
+    background-color: rgb(72, 0, 255);
+    height: 100%;
+    width: 1000px;
+}
+
 .slid-7 {
     display: flex;
     flex-direction: column;
