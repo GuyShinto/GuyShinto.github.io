@@ -735,6 +735,7 @@ nav {
 }
 
 .active-desc-center {
+    background-color: #003067;
     font-size: 20px;
     text-align: center;
 }
@@ -825,7 +826,7 @@ nav {
 
 .line-center {
     position: relative;
-    top: 50px;
+    top: 0px;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     width: 100%;
@@ -1232,7 +1233,7 @@ nav {
     align-items: start;
     background-color: aqua;
     margin-top: 10rem;
-    height: 100px;
+    height: 200px;
     width: 800px;
     min-width: 800px;
     max-width: 800px;
@@ -1245,7 +1246,7 @@ nav {
     font-weight: 200;
     background-color: rgb(255, 143, 143);
     width: 800px;
-    height: 30px;
+    height: 80px;
 }
 
 .slid-6-title {
