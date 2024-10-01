@@ -33,6 +33,19 @@ function View() {
         });
     })
 }
+
+function BarNav() {
+    var navbar = document.querySelector(".navbar")
+    document.onmousemove = function(e){
+        if (e.clientY < 100) {
+            navbar.className = 'navbar dark';
+        } else {
+            navbar.className = 'navbar navbar-active dark';
+        }
+    //console.log("mouse location:", e.clientX, e.clientY);
+    }
+}
+
 /*
 var flipPaper = document.getElementsByClassName('slid-4-card-max')[0];
 
@@ -182,7 +195,7 @@ function showSlides(n,element) {
 
 
 
-
+BarNav()
 Delay()
 View()
 Scoll()
