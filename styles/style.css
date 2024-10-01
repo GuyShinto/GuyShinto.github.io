@@ -1443,8 +1443,8 @@ nav {
     align-items: start;
     background-color: aqua;
     margin-top: 5rem;
-    margin-bottom: 1rem;
-    height: 1300px;
+    margin-bottom: 10rem;
+    height: 1800px;
     width: 500px;
     min-width: 400px;
     max-width: 400px;
@@ -1481,7 +1481,7 @@ nav {
     align-self: center;
     background-color: rgb(255, 70, 70);
     width: 800px;
-    height: 100%;
+    height: 40px;
 }
 
 .slid-work-list {
@@ -1572,6 +1572,22 @@ nav {
     width: 400px;
 }
 
+.item-card-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(154, 114, 255);
+    height: 600px;
+    width: 400px;
+}
+
+.item-card-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(154, 114, 255);
+    height: 300px;
+    width: 400px;
+}
+
 .item-card-icon{
     display: flex;
     z-index: 1;
@@ -1590,6 +1606,7 @@ nav {
 }
 
 .item-card-title{
+    line-height: 40px;
     text-align: center;
     font-size: 32px;
     background-color: rgb(86, 48, 183);
@@ -1613,7 +1630,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: aqua;
-    margin-top: 5rem;
+    margin-top: 80rem;
     margin-bottom: 1rem;
     height: 1000px;
     width: 500px;
