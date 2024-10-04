@@ -1,5 +1,5 @@
 *,:after,:before {
-    --tw-text-opacity: 1;
+    --tw-text-opacity: 0.2;
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -85,6 +85,11 @@ h1.in-view {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+.box-dark {
+    background-color: rgba(255, 255, 255, 0.088);
+    border-radius: 10px;
 }
 
 p {
@@ -416,7 +421,6 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: aqua;
     margin-top: 5rem;
     margin-bottom: 5rem;
     height: 900px;
@@ -433,7 +437,6 @@ nav {
     'left left left left left right'
     'left left left left left right'
     'down down down down down right';
-    background-color: rgb(72, 0, 255);
     height: 100%;
     width: 100%;
 }
@@ -446,7 +449,6 @@ nav {
     width: 100%;
     min-width: 500px;
     height: 100%;
-    background-color: #ff77d4;
 }
 
 .slid-frame-img {
@@ -454,7 +456,7 @@ nav {
     flex-direction: column;
     width: 250px;
     height: 400px;
-    background-color: #ffffff00;
+    background-color: #ff000055;
 }
 
 .slid-frame-1-img {
@@ -494,7 +496,6 @@ nav {
     width: 100%;
     height: 100%;
     min-height: 300px;
-    background-color: #ff0000;
 }
 
 .resume-info-text {
@@ -502,7 +503,6 @@ nav {
     gap: 5px;
     font-size: 20px;
     width: 100%;
-    background-color: rgb(255, 100, 100);
 }
 
 .resume-info-text line {
@@ -516,7 +516,6 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    background-color: #38007c;
 }
 
 
@@ -526,36 +525,32 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    background-color: #493b63;
 }
 
 .exric-header {
     font-size: 50px;
     height: 40%;
-    background-color: #0077ff;
     text-align: start;
 }
 
 .exric-small {
-    font-size: 25px;
+    font-size: 18px;
     height: 40%;
-    background-color: #0077ff;
     text-align: start;
 }
 
 .exric-list {
+    margin-top: 10px;
     height: 60%;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    background-color: #003067;
 }
 
 .exric-list .item {
     font-size: 20px;
     height: 100%;
     width: 100px;
-    background-color: #00ff08;
 }
 
 .exric-list .item .head {
@@ -581,7 +576,6 @@ nav {
     column-count: 3;
     row-gap: 80px;
     flex-wrap: wrap;
-    background-color: #003067;
 }
 
 .dev-item .icon-dev{
@@ -638,13 +632,12 @@ nav {
     bottom: 30px;
     font-size: 10px;
     text-align: center;
-    background-color: #0050ab;
 }
 
 .social-items {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     width: 100%;
     max-width: 300px;
     max-height: 100px;
@@ -652,11 +645,10 @@ nav {
 
 .social-item {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #00ff08;
     width: 100%;
     max-width: 600px;
     min-width: 100px;
@@ -668,8 +660,6 @@ nav {
     display: flex;
     overflow: hidden;
     flex-direction: column;
-    background-color: #bfff00;
-
     width: 40%;
     height: 100%;
 }
@@ -679,25 +669,25 @@ nav {
     max-height: 50px;
     max-width: 100px;
     padding: .25rem;
-    background-color: #ffae00;
+    margin: 5px;
     
 }
 
 .social-icon img{
     display: flex;
-    width: 50px;
-    height: 50px;
-    max-width: 50px;
-    max-height: 50px;
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
 }
 
 
 
 .social-linebar {
     display: flex;
-    background-color: #f20000;
+    background-color: white;
     width: 100%;
-    height: 5px;
+    height: 2px;
 }
 
 .active-title {
@@ -723,6 +713,13 @@ nav {
     
 }
 
+.title-resume {
+    line-height: 0.8;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
 .active-title-big {
     line-height: 0.8;
     font-size: 120px;
@@ -740,14 +737,12 @@ nav {
 }
 
 .active-desc-center {
-    background-color: #003067;
     font-size: 20px;
     text-align: center;
 }
 
 .social-icon-title {
     display: block;
-    background-color: #ffae00;
     width: 100%;
     height: 100%;
     min-width:200px
@@ -770,7 +765,6 @@ nav {
 
 .social-img {
     display: flex;
-    background-color: #ff00d4;
     width: 100%;
     height: 100%;
 }
@@ -794,6 +788,7 @@ nav {
 }
 
 .social-img-block {
+    opacity: 0.6;
     display: flex;
     border-radius: .5rem;
     overflow: hidden;
@@ -1084,7 +1079,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: aqua;
     margin-top: 5rem;
     margin-bottom: 5rem;
     height: 900px;
@@ -1096,13 +1090,13 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: red;
     width: 100%;
     height: 100%;
 }
 
 .slid-5-frame-container {
     display: flex;
+    gap: 10px;
     flex-direction: row;
     align-items: start;
     width: 100%;
@@ -1113,7 +1107,6 @@ nav {
     text-align: center;
     font-size: 80px;
     font-weight: 200;
-    background-color: rgb(255, 143, 143);
     width: 100%;
     height: 20%;
 }
@@ -1122,16 +1115,15 @@ nav {
     text-align: center;
     font-size: 20px;
     font-weight: 200;
-    background-color: rgb(255, 205, 205);
     width: 100%;
     height: 20%;
 }
 
 .slid-5-top {
     display: flex;
+    margin-top: 10px;
     flex-direction: column;
     align-self: flex-start;
-    background-color: #bfff00;
     width: 100%;
     height: 70%;
 }
@@ -1140,7 +1132,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-self: center;
-    background-color: #bfff00;
     width: 100%;
     height: 70%;
 }
@@ -1149,7 +1140,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    background-color: #bfff00;
     width: 100%;
     height: 70%;
 }
@@ -1158,7 +1148,6 @@ nav {
     position: relative;
     top: 20px;
     left: 20px;
-    background-color: #ffffff;
     width: 100px;
     height: 100px;
 }
@@ -1201,20 +1190,20 @@ nav {
 }
 
 .slid-5-title-text {
-    font-size: 40px;
+    white-space: nowrap; 
+    overflow: hidden;
+    font-size: 30px;
     font-weight: 200;
     margin-top: 30px;
     margin-left: 20px;
-    background-color: rgb(255, 143, 143);
     width: 100%;
     height: 50px;
 }
 
 .slid-5-text {
-    font-size: 27px;
+    font-size: 16px;
     font-weight: 200;
     margin-left: 20px;
-    background-color: rgb(224, 47, 47);
     width: 100%;
     height: 20%;
 }
@@ -1223,7 +1212,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: aqua;
     margin-top: 10rem;
     margin-bottom: 20rem;
     height: 1000px;
@@ -1236,7 +1224,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: aqua;
     margin-top: 10rem;
     margin-bottom: 5rem;
     height: 100px;
@@ -1249,7 +1236,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: aqua;
     margin-top: 10rem;
     height: 200px;
     width: 800px;
@@ -1262,7 +1248,6 @@ nav {
     align-self: center;
     font-size: 60px;
     font-weight: 200;
-    background-color: rgb(255, 143, 143);
     width: 800px;
     height: 80px;
 }
@@ -1272,14 +1257,13 @@ nav {
     align-self: center;
     font-size: 80px;
     font-weight: 200;
-    background-color: rgb(255, 143, 143);
     width: 800px;
     height: 200px;
 }
 .slid-6-info {
+    margin-top: 10px;
     text-align: center;
     align-self: center;
-    background-color: rgb(255, 70, 70);
     width: 800px;
     height: 100%;
 }
@@ -1292,7 +1276,6 @@ nav {
     'header header top'
     'left mid right'
     'left mid right';
-    background-color: rgb(72, 0, 255);
     height: 100%;
     width: 900px;
 }
@@ -1305,7 +1288,6 @@ nav {
     'top top header'
     'mid mid header'
     'left right header';
-    background-color: rgb(72, 0, 255);
     height: 100%;
     width: 1000px;
 }
@@ -1318,7 +1300,6 @@ nav {
     'header top right'
     'header top right'
     'header down right';
-    background-color: rgb(72, 0, 255);
     height: 100%;
     width: 1000px;
 }
@@ -1331,7 +1312,6 @@ nav {
     'top top down'
     'top top down'
     'left right header';
-    background-color: rgb(72, 0, 255);
     height: 100%;
     width: 1000px;
 }
@@ -1350,7 +1330,6 @@ nav {
     'header right right right'
     'header right right right'
     'header down down down';
-    background-color: rgb(72, 0, 255);
     height: 100%;
     width: 1000px;
 }
@@ -1370,7 +1349,6 @@ nav {
     'left left left header'
     'left left left header'
     'down down down header';
-    background-color: rgb(72, 0, 255);
     height: 100%;
     width: 1200px;
 }
@@ -1383,7 +1361,6 @@ nav {
     'top top top'
     'top top top'
     'left right right';
-    background-color: rgb(72, 0, 255);
     height: 100%;
     width: 1000px;
 }
@@ -1396,7 +1373,6 @@ nav {
     'top top header'
     'down down header'
     'left right header';
-    background-color: rgb(72, 0, 255);
     height: 100%;
     width: 1000px;
 }
@@ -1411,7 +1387,6 @@ nav {
     'down down down'
     'left left left'
     ;
-    background-color: rgb(72, 0, 255);
     height: 100%;
     width: 1000px;
 }
@@ -1424,7 +1399,6 @@ nav {
     'header header'
     'top left'
     'down right';
-    background-color: rgb(72, 0, 255);
     height: 100%;
     width: 1000px;
 }
@@ -1437,7 +1411,6 @@ nav {
     'header header header'
     'left top down'
     ;
-    background-color: rgb(72, 0, 255);
     height: 100%;
     width: 1000px;
 }
@@ -1446,7 +1419,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: aqua;
     margin-top: 5rem;
     margin-bottom: 1rem;
     height: 100px;
@@ -1459,7 +1431,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: aqua;
     margin-top: 5rem;
     margin-bottom: 10rem;
     height: 1800px;
@@ -1473,31 +1444,43 @@ nav {
     align-self: center;
     font-size: 60px;
     font-weight: 200;
-    background-color: rgb(255, 143, 143);
     width: 800px;
 }
 .slid-7-info {
+    margin-top: 10px;
     text-align: center;
     align-self: center;
-    background-color: rgb(255, 70, 70);
     width: 800px;
     height: 100%;
 }
 
+.exric-title {
+    padding-left: 10px;
+    position: relative;
+    right: 10px;
+    text-align: left;
+    align-self: center;
+    font-size: 40px;
+    font-weight: 200;
+    width: 200px;
+}
+
 .slid-work-title {
+    padding-left: 10px;
+    position: relative;
+    right: 260px;
     text-align: left;
     align-self: center;
     font-size: 60px;
     font-weight: 200;
-    background-color: rgb(255, 143, 143);
-    width: 800px;
+    width: 300px;
 }
 
 .slid-work-info {
+    margin-top: 10px;
     margin-bottom: 50px;
     text-align: left;
     align-self: center;
-    background-color: rgb(255, 70, 70);
     width: 800px;
     height: 40px;
 }
@@ -1508,8 +1491,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    row-gap: 120px;
-    background-color: rgb(72, 0, 255,0);
+    row-gap: 220px;
     height: 100%;
     width: 900px;
 }
@@ -1520,7 +1502,6 @@ nav {
     width: 100%;
     height: 100%;
     gap: 5px;
-    background-color: #0077ff;
 }
 
 .image-show {
@@ -1549,7 +1530,6 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: #558304;
     height: 100%;
     width: 100%;
 }
@@ -1585,7 +1565,6 @@ nav {
 .item-card {
     display: flex;
     flex-direction: column;
-    background-color: rgb(154, 114, 255);
     height: 250px;
     width: 400px;
 }
@@ -1593,7 +1572,6 @@ nav {
 .item-card-1 {
     display: flex;
     flex-direction: column;
-    background-color: rgb(154, 114, 255);
     height: 600px;
     width: 400px;
 }
@@ -1601,7 +1579,6 @@ nav {
 .item-card-2 {
     display: flex;
     flex-direction: column;
-    background-color: rgb(154, 114, 255);
     height: 300px;
     width: 400px;
 }
@@ -1613,7 +1590,6 @@ nav {
     border-radius: 0.5rem;
     outline: 0px solid rgb(255,255,255,0);
     transition: outline 0.5s;
-    background-color: rgb(35, 0, 125);
     width: 100%;
     height: 100%;
 }
@@ -1624,16 +1600,16 @@ nav {
 }
 
 .item-card-title{
+    margin-top: 10px;
     line-height: 40px;
     text-align: center;
     font-size: 32px;
-    background-color: rgb(86, 48, 183);
 }
 
 .item-card-info{
+    margin-top: 10px;
     text-align: center;
     font-size: 16px;
-    background-color: rgb(86, 48, 183);
 }
 
 .item-card-icon:hover{
@@ -1647,7 +1623,6 @@ nav {
     gap: 50px;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
     margin-top: 80rem;
     margin-bottom: 1rem;
     height: 1000px;
@@ -1667,7 +1642,6 @@ nav {
 
 
 .grid-card {
-    background-color: #00ff08;
     border-radius: 0.5rem;
 }
 
@@ -1767,7 +1741,7 @@ nav {
 
 :is(.dark *) {
     --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 * :is(.dark svg>path) {
@@ -1776,17 +1750,17 @@ nav {
 
 :is(.dark .dark\:bg-black) {
     --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 }
 
 .bg-white {
     --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
 .text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    --tw-text-opacity: 0.6;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 

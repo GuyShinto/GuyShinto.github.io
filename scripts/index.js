@@ -87,7 +87,7 @@ function Scoll() {
 
         const background = document.querySelectorAll(".fade-background");
         background.forEach((element) => {
-            element.style['opacity'] = clamp(1.0 - window.scrollY/700,0.25,1.0);
+            //element.style['opacity'] = clamp(1.0 - window.scrollY/700,1.0,1.0);
             element.style['filter'] = `blur(${clamp(window.scrollY/100,0.0,10.0)}px)`;
         });
 
