@@ -295,6 +295,20 @@ nav {
     transition: .3s;
 }
 
+.i-content {
+    position: relative;
+    text-align: end;
+    text-decoration: none;
+    margin: 10px;
+    line-height: 3rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    opacity: .6;
+    transition: .3s;
+}
+.i-content:hover {
+    opacity: 1
+}
 .i-navbar:hover {
     opacity: 1
 }
@@ -456,12 +470,12 @@ nav {
     flex-direction: column;
     width: 250px;
     height: 400px;
-    background-color: #ff000055;
+    transform: rotate(-2deg);
 }
 
 .slid-frame-1-img {
     width: 100%;
-    height: 80%;
+    height: 65%;
     transform: translateX(-20px);
     border-left: 20px solid white;
     border-right: 20px solid white;
@@ -483,9 +497,28 @@ nav {
     background-color: white;
 }
 
+.flex-icon{
+    display: flex;
+    justify-content: center;
+}
+.flex-icon .like{
+    position: relative;
+    right: 60px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+}
+.flex-icon .chat{
+    position: relative;
+    left: 60px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+}
+
 .slid-frame-photo {
     position: relative;
-    top: 50px;
+    top: 0px;
     transform: scale(1.1);
 }
 
@@ -1432,11 +1465,17 @@ nav {
     flex-direction: column;
     align-items: start;
     margin-top: 5rem;
-    margin-bottom: 10rem;
     height: 1800px;
     width: 500px;
     min-width: 400px;
     max-width: 400px;
+}
+
+.online-work {
+    margin-bottom: 100rem;
+}
+.onsite-work {
+    margin-bottom: 30rem;
 }
 
 .slid-7-title {
@@ -1623,7 +1662,7 @@ nav {
     gap: 50px;
     justify-content: center;
     align-items: center;
-    margin-top: 80rem;
+    margin-top: 30rem;
     margin-bottom: 1rem;
     height: 1000px;
     width: 500px;
